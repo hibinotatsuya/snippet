@@ -7,7 +7,9 @@ echo date('W', strtotime('2021-01-05')) . "\n";
 echo date('W', strtotime('2021-01-06')) . "\n";
 echo date('W', strtotime('2021-01-07')) . "\n";
 echo date('W', strtotime('2021-01-08')) . "\n";
+
 echo week_start_date(2021, 1) . "\n";
+echo week_start_date(2021, intval(date('W'))) . "\n";
 
 function week_start_date($year, $week_number=1) {
     $time = strtotime("{$year}-01-01");
